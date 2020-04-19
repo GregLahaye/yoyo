@@ -2,9 +2,10 @@ package yoyo
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/GregLahaye/yogurt"
 	"github.com/GregLahaye/yoyo/styles"
-	"time"
 )
 
 type Spinner struct {
@@ -24,6 +25,8 @@ func Start(style styles.Style) *Spinner {
 }
 
 func (s *Spinner) Spin() {
+	fmt.Print(yogurt.DisableCursor)
+
 	for !s.Condition {
 		for _, c := range s.Style.Characters {
 			fmt.Print(c)
@@ -31,6 +34,8 @@ func (s *Spinner) Spin() {
 			yogurt.CursorBackward(len(c))
 		}
 	}
+
+	fmt.Print(yogurt.EnableCursor)
 
 	s.Channel <- true
 }
