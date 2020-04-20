@@ -26,6 +26,7 @@ func Start(style styles.Style) *Spinner {
 
 func (s *Spinner) Spin() {
 	fmt.Print(yogurt.DisableCursor)
+	defer fmt.Print(yogurt.EnableCursor)
 
 	for !s.Condition {
 		for _, c := range s.Style.Characters {
@@ -34,8 +35,6 @@ func (s *Spinner) Spin() {
 			yogurt.CursorBackward(len(c))
 		}
 	}
-
-	fmt.Print(yogurt.EnableCursor)
 
 	s.Channel <- true
 }
