@@ -32,7 +32,7 @@ func (s *Spinner) Spin() {
 		for _, c := range s.Style.Characters {
 			fmt.Print(c)
 			time.Sleep(time.Millisecond * s.Style.Milliseconds)
-			yogurt.CursorBackward(len(c))
+			fmt.Print(yogurt.CursorBackward(len(c)))
 		}
 	}
 

@@ -1,4 +1,6 @@
 github.com/GregLahaye/yogurt v0.0.0-20200419002957-f2a2e49d9f79 h1:iIrOZbFkhpIgtkcfKcZl2ir0U9AlEGmCE81VUqUhAfs=
 github.com/GregLahaye/yogurt v0.0.0-20200419002957-f2a2e49d9f79/go.mod h1:2ipRlQlNy+YPkS6EDLTlxnqVGE24pK7itejg2nGITDg=
+github.com/GregLahaye/yogurt v0.0.0-20200419090816-b3f8e1a90298 h1:qvsQMJ1GOCaKvd/8tciS9UB2o7w7GuI/SllD+EzQtzY=
+github.com/GregLahaye/yogurt v0.0.0-20200419090816-b3f8e1a90298/go.mod h1:2ipRlQlNy+YPkS6EDLTlxnqVGE24pK7itejg2nGITDg=
 golang.org/x/sys v0.0.0-20200413165638-669c56c373c4 h1:opSr2sbRXk5X5/givKrrKj9HXxFpW2sdCiP8MJSKLQY=
 golang.org/x/sys v0.0.0-20200413165638-669c56c373c4/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
